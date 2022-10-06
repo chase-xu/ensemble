@@ -13,7 +13,6 @@ const reducer = createReducer(initialState, async (builder) => {
     .addCase(update, (state, action)=>{   
       const movie = [...action.payload];
       return {...state, modbs: [...movie]}
-      // state.modbs = action.payload;
     })
     .addDefaultCase((state, action) => {return {...state}})
 })

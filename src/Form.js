@@ -26,8 +26,8 @@ export default function Form (props){
     const dispatch = useDispatch();
 
     const handleSearch = async e=>{
-        // let url = process.env.REACT_APP_MODB_URL;
-        let url = 'http://www.omdbapi.com/?apikey=2b957995';
+        let url = process.env.REACT_APP_MODB_URL;
+        // let url = 'http://www.omdbapi.com/?apikey=2b957995';
         if(title !== '') {
             url = url + '&t=' + title;
         } else{

@@ -48,8 +48,8 @@ export default function Form (props){
         }
         try{
             console.log(url)
-            const res = await axios.post('/fetch', {url: url});
-            // const res = await axios.get(url);
+            // const res = await axios.post('/fetch', {url: url});
+            const res = await axios.get(url);
             let data = res.data;
             if(!Array.isArray(data)){
                 if(data.Response === 'False'){

@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+      <head><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta></head>
       <App />
     </Provider>
   </React.StrictMode>

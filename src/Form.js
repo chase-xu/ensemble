@@ -47,10 +47,11 @@ export default function Form (props){
             url+= `&plot=${plot}`;
         }
         try{
-            const res = await axios.get(url);
+            console.log(url)
+            const res = await axios.post('/fetch', {url: url});
+            // const res = await axios.get(url);
             let data = res.data;
             if(!Array.isArray(data)){
-
                 if(data.Response === 'False'){
                     toast({
                         title: 'Error',

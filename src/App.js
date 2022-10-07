@@ -14,7 +14,7 @@ function App() {
 
   return (
     <ChakraProvider>
-      
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
       <div
       style={{
         margin: '10%'
